@@ -3,331 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Fortune Talks - Apple Watch coin flip app">
-    <title>Privacy Policy - Fortune Talks</title>
+    <title>Fortune Flips - Support</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-box: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #1d1d1f;
-            background-color: #f5f5f7;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
         }
-        
+
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            border-radius: 26px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
         h1 {
-            color: #1d1d1f;
             font-size: 2.5em;
             margin-bottom: 10px;
-            font-weight: 600;
+            font-weight: 700;
         }
-        
-        h2 {
-            color: #1d1d1f;
-            font-size: 1.5em;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            font-weight: 600;
-            border-bottom: 2px solid #f5f5f7;
-            padding-bottom: 8px;
-        }
-        
-        h3 {
-            color: #424245;
+
+        .tagline {
             font-size: 1.2em;
-            margin-top: 25px;
-            margin-bottom: 10px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            margin: 40px 0 20px 0;
+            font-size: 1.8em;
             font-weight: 600;
         }
-        
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin: 25px 0 15px 0;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
         p {
             margin-bottom: 15px;
-            color: #424245;
+            color: #555;
         }
-        
-        strong {
-            color: #1d1d1f;
-            font-weight: 600;
-        }
-        
+
         ul {
-            margin-left: 30px;
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 3em;
             margin-bottom: 15px;
         }
-        
-        li {
-            margin-bottom: 8px;
-            color: #424245;
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: #667eea;
         }
-        
-        .highlight {
-            background-color: #fff3cd;
+
+        .faq-item {
+            background: #f9f9f9;
             padding: 20px;
-            border-left: 4px solid #ffc107;
-            margin: 20px 0;
-            border-radius: 4px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
         }
-        
-        .success {
-            background-color: #d4edda;
-            padding: 20px;
-            border-left: 4px solid #28a745;
-            margin: 20px 0;
-            border-radius: 4px;
+
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
-        
-        .last-updated {
-            color: #86868b;
-            font-size: 0.9em;
-            margin-bottom: 30px;
+
+        .faq-answer {
+            color: #666;
         }
-        
-        .contact-box {
-            background-color: #f5f5f7;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        
-        a {
-            color: #0071e3;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #d2d2d7;
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
             text-align: center;
-            color: #86868b;
+        }
+
+        .contact-section h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
             font-size: 0.9em;
         }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
+
+        .privacy-policy {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .privacy-policy h3 {
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
             }
-            
+
+            header {
+                padding: 40px 20px;
+            }
+
             h1 {
                 font-size: 2em;
             }
-            
-            h2 {
-                font-size: 1.3em;
+
+            .content {
+                padding: 20px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy for Fortune Talks</h1>
-        <p class="last-updated"><strong>Last Updated:</strong> January 31, 2026</p>
-        
-        <div class="success">
-            <p><strong>🔒 Your Privacy is 100% Protected</strong></p>
-            <p>Fortune Talks does NOT collect, store, or transmit any personal information. All data stays on your device.</p>
-        </div>
-        
-        <h2>Overview</h2>
-        <p>Fortune Talks ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains our practices regarding the Fortune Talks Apple Watch application.</p>
-        
-        <h2>Developer Information</h2>
-        <div class="contact-box">
-            <p><strong>Developer:</strong> H. Cem Doğan</p>
-            <p><strong>Contact Email:</strong> <a href="mailto:hcdogan@msn.com">hcdogan@msn.com</a></p>
-            <p><strong>App Name:</strong> Fortune Talks</p>
-            <p><strong>Platform:</strong> Apple Watch (watchOS)</p>
-        </div>
-        
-        <h2>Information Collection</h2>
-        <p><strong>Fortune Talks does NOT collect, store, or transmit any personal information.</strong></p>
-        
-        <p>All data is stored locally on your Apple Watch:</p>
-        <ul>
-            <li><strong>Coin flip statistics</strong> - Stored in app preferences on your device only</li>
-            <li><strong>Theme selection</strong> - Stored in app preferences on your device only</li>
-            <li><strong>Purchase history</strong> - Managed by Apple through StoreKit</li>
-        </ul>
-        
-        <p>We cannot access this data. It never leaves your device.</p>
-        
-        <h2>What We Do NOT Collect</h2>
-        <p>Fortune Talks does not collect:</p>
-        <ul>
-            <li>❌ Your name, email address, or contact information</li>
-            <li>❌ Your location or movement data</li>
-            <li>❌ Your usage patterns or flip statistics</li>
-            <li>❌ Device information or identifiers</li>
-            <li>❌ Analytics or tracking data</li>
-            <li>❌ Advertising identifiers</li>
-            <li>❌ Any personally identifiable information</li>
-            <li>❌ Health or fitness data</li>
-            <li>❌ Photos or media files</li>
-            <li>❌ Contacts or social connections</li>
-        </ul>
-        
-        <div class="highlight">
-            <p><strong>We literally collect NOTHING.</strong> Your privacy is 100% protected.</p>
-        </div>
-        
-        <h2>Third-Party Services</h2>
-        <p>Fortune Talks uses <strong>Apple's StoreKit</strong> framework for in-app purchases. When you make a purchase:</p>
-        <ul>
-            <li>The transaction is processed entirely by Apple</li>
-            <li>We do not receive or store your payment information</li>
-            <li>We do not have access to your credit card details</li>
-            <li>Apple's privacy policy applies to these transactions</li>
-            <li>View Apple's privacy policy at: <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></li>
-        </ul>
-        
-        <p><strong>No other third-party services are used.</strong> No analytics, no tracking, no advertising networks.</p>
-        
-        <h2>In-App Purchases</h2>
-        <p>Fortune Talks offers optional premium coin themes:</p>
-        <ul>
-            <li><strong>Silver Coin Theme</strong> - $0.99 USD</li>
-            <li><strong>Gold Coin Theme</strong> - $1.99 USD</li>
-        </ul>
-        
-        <p>When you purchase:</p>
-        <ul>
-            <li>The transaction is handled by Apple's App Store</li>
-            <li>Your purchase is tied to your Apple ID (managed by Apple)</li>
-            <li>We only receive confirmation that a purchase was made</li>
-            <li>We cannot see your payment details or personal information</li>
-            <li>You can restore purchases on other devices using the same Apple ID</li>
-        </ul>
-        
-        <h2>Local Data Storage</h2>
-        <p>All app data is stored locally on your device using:</p>
-        <ul>
-            <li><strong>UserDefaults</strong> - A standard iOS/watchOS data storage system</li>
-            <li>Stored on your device only</li>
-            <li>Not transmitted anywhere</li>
-            <li>Not backed up to our servers (we don't have servers!)</li>
-            <li>May be backed up to iCloud if you have iCloud backup enabled (controlled by Apple)</li>
-        </ul>
-        
-        <p><strong>Data stored locally:</strong></p>
-        <ul>
-            <li>Number of coin flips (heads vs tails count)</li>
-            <li>Selected coin theme (Bronze, Silver, or Gold)</li>
-            <li>Purchase status (which themes you've unlocked)</li>
-        </ul>
-        
-        <p><strong>This data:</strong></p>
-        <ul>
-            <li>Never leaves your watch</li>
-            <li>Is not sent to us or anyone else</li>
-            <li>Can be deleted by removing the app</li>
-            <li>Can be reset using the in-app reset button</li>
-        </ul>
-        
-        <h2>Data Security</h2>
-        <p>Since we don't collect, transmit, or store any user data on our servers (we don't even have servers), there is no risk of your personal information being:</p>
-        <ul>
-            <li>Accessed by us</li>
-            <li>Sold to third parties</li>
-            <li>Breached in a data leak</li>
-            <li>Shared with advertisers</li>
-            <li>Used for profiling</li>
-        </ul>
-        
-        <p>Your data stays on your device, under your control.</p>
-        
-        <h2>Children's Privacy</h2>
-        <p>Fortune Talks is safe for all ages. We do not knowingly collect personal information from anyone, including children under 13. Since we don't collect any data at all, children can use the app safely.</p>
-        <p><strong>Age Rating:</strong> 4+ (suitable for all ages)</p>
-        
-        <h2>Your Rights</h2>
-        <p>You have complete control over your local data:</p>
-        <ul>
-            <li><strong>View your data:</strong> All statistics are visible in the app</li>
-            <li><strong>Reset your data:</strong> Use the "Reset Statistics" button in the app</li>
-            <li><strong>Delete your data:</strong> Delete the app to remove all local data</li>
-            <li><strong>Restore purchases:</strong> Use the "Restore Purchases" button</li>
-            <li><strong>Manage purchases:</strong> Through your Apple ID settings</li>
-        </ul>
-        
-        <h2>GDPR Compliance</h2>
-        <p>For users in the European Union:</p>
-        <ul>
-            <li>We do not collect personal data, so GDPR data processing rules do not apply</li>
-            <li>We are not a data controller or data processor</li>
-            <li>You have no data protection concerns with our app</li>
-            <li>All data stays locally on your device</li>
-        </ul>
-        
-        <h2>CCPA Compliance</h2>
-        <p>For users in California:</p>
-        <ul>
-            <li>We do not sell personal information (we don't have any to sell)</li>
-            <li>We do not share personal information with third parties</li>
-            <li>We do not collect personal information for business purposes</li>
-        </ul>
-        
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
-        <ul>
-            <li>Updating the "Last Updated" date at the top of this policy</li>
-            <li>Posting the new Privacy Policy at this URL</li>
-        </ul>
-        
-        <h2>Contact Us</h2>
-        <div class="contact-box">
-            <p>If you have any questions about this Privacy Policy or Fortune Talks, please contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:hcdogan@msn.com">hcdogan@msn.com</a></p>
-            <p><strong>Subject Line:</strong> Fortune Talks Privacy Policy Inquiry</p>
-            <p>We will respond to privacy inquiries within 48 hours.</p>
-        </div>
-        
-        <h2>Apple's Role</h2>
-        <p>Fortune Talks is distributed through the Apple App Store. Apple's privacy practices also apply to:</p>
-        <ul>
-            <li>App Store downloads</li>
-            <li>In-app purchase processing</li>
-            <li>iCloud backups (if enabled)</li>
-            <li>Device analytics (if enabled in iOS settings)</li>
-        </ul>
-        <p>View Apple's privacy policy at: <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></p>
-        
-        <h2>Summary (TL;DR)</h2>
-        <div class="success">
-            <p><strong>Simple version:</strong></p>
+        <header>
+            <div class="app-icon">🪙</div>
+            <h1>Fortune Flips</h1>
+            <p class="tagline">Make every decision with a flip</p>
+        </header>
+
+        <div class="content">
+            <h2>About Fortune Flips</h2>
+            <p>Fortune Flips is a beautifully designed coin flipping app that brings the classic decision-making tool to your iPhone and Apple Watch. With stunning 3D animations, customizable coin themes, and detailed statistics tracking, Fortune Flips makes every flip an experience.</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Realistic Animations</h3>
+                    <p>Enjoy smooth 3D coin flips with realistic physics and haptic feedback</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Custom Themes</h3>
+                    <p>Choose from multiple coin designs to match your style</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Statistics</h3>
+                    <p>Track your flip history with detailed heads vs tails statistics</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌚</div>
+                    <h3>Apple Watch</h3>
+                    <p>Flip coins right from your wrist with full watchOS support</p>
+                </div>
+            </div>
+
+            <h2>How to Use</h2>
+            <ol>
+                <li><strong>Tap the coin</strong> to flip it and watch the smooth 3D animation</li>
+                <li><strong>View Statistics</strong> by tapping the chart icon to see your flip history</li>
+                <li><strong>Choose Themes</strong> by tapping the palette icon to customize your coin</li>
+                <li><strong>Reset Statistics</strong> anytime from the Statistics screen</li>
+            </ol>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I unlock new coin themes?</div>
+                <div class="faq-answer">Tap the palette icon on the main screen to browse available themes. Premium themes can be unlocked through in-app purchase. The classic theme is always free!</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is the coin flip truly random?</div>
+                <div class="faq-answer">Yes! Fortune Flips uses the device's secure random number generator to ensure completely fair and unpredictable results.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I use Fortune Flips on my Apple Watch?</div>
+                <div class="faq-answer">Absolutely! Fortune Flips includes a full-featured Apple Watch app that you can use independently of your iPhone.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I restore my previous purchases?</div>
+                <div class="faq-answer">If you've purchased themes on another device or need to restore them, tap the palette icon, scroll to the bottom, and select "Restore Purchases."</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Will my statistics sync between devices?</div>
+                <div class="faq-answer">Statistics are currently stored locally on each device. This ensures your flip history remains private and secure.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I turn off haptic feedback?</div>
+                <div class="faq-answer">Haptic feedback is enabled by default to enhance the flipping experience. If you prefer to disable it, please reach out through our support contact below.</div>
+            </div>
+
+            <h2>Privacy Policy</h2>
+            <div class="privacy-policy">
+                <h3>Data Collection</h3>
+                <p>Fortune Flips respects your privacy. We do not collect, store, or share any personal information. All statistics and preferences are stored locally on your device.</p>
+
+                <h3>In-App Purchases</h3>
+                <p>In-app purchases are processed through Apple's App Store. We do not have access to your payment information. Purchase history is managed through your Apple ID.</p>
+
+                <h3>Analytics</h3>
+                <p>Fortune Flips does not use any third-party analytics or tracking tools. Your usage of the app remains completely private.</p>
+
+                <h3>Children's Privacy</h3>
+                <p>Fortune Flips is safe for users of all ages. We do not knowingly collect information from children.</p>
+            </div>
+
+            <h2>System Requirements</h2>
             <ul>
-                <li>✅ Fortune Talks collects ZERO data</li>
-                <li>✅ Everything stays on your device</li>
-                <li>✅ We can't see your statistics or purchases</li>
-                <li>✅ Your privacy is 100% protected</li>
-                <li>✅ No tracking, no analytics, no ads</li>
-                <li>✅ Safe for all ages</li>
+                <li><strong>iOS:</strong> Requires iOS 17.0 or later</li>
+                <li><strong>watchOS:</strong> Requires watchOS 10.0 or later</li>
+                <li><strong>Devices:</strong> Compatible with iPhone, iPad, and Apple Watch</li>
             </ul>
-            <p><strong>That's it. Really. We just don't collect anything.</strong></p>
+
+            <div class="contact-section">
+                <h2>Need Help?</h2>
+                <p>If you have questions, suggestions, or need assistance, we'd love to hear from you!</p>
+                <a href="mailto:support@fortuneflips.app" class="email-link">📧 Contact Support</a>
+            </div>
+
+            <h2>Version History</h2>
+            <div class="faq-item">
+                <div class="faq-question">Version 1.0</div>
+                <div class="faq-answer">
+                    <ul>
+                        <li>Initial release</li>
+                        <li>Smooth 3D coin flip animations</li>
+                        <li>Multiple coin themes with in-app purchases</li>
+                        <li>Statistics tracking</li>
+                        <li>Full Apple Watch support</li>
+                        <li>Haptic feedback integration</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <div class="footer">
-            <p><strong>Fortune Talks</strong> - Let Ancient Coins Guide Your Decisions</p>
-            <p>© 2025-2026 H. Cem Doğan. All rights reserved.</p>
-            <p>This privacy policy is effective as of January 31, 2026.</p>
-        </div>
+
+        <footer>
+            <p>&copy; 2026 Fortune Flips. All rights reserved.</p>
+            <p>Made with ❤️ for decision makers everywhere</p>
+        </footer>
     </div>
 </body>
 </html>
